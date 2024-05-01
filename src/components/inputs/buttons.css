@@ -1,0 +1,32 @@
+.button-show {
+    display: flex;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.button-show.on {
+    background-color: rgb(190, 219, 230);
+}
+
+
+.button-show.off {
+    background-color: white;
+}
+
+.button-show:hover {
+    border: 2px solid black;
+}
+
+.button-show img {
+    width: 20px;
+    height: 20px;
+}
+
+.button-show svg {
+    width: 30px;
+    height: 30px;
+}
