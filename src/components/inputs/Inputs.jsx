@@ -1,4 +1,6 @@
-export function Inputs({textarea=false, type, placeholder, id, label, value, onChange, mandatory}) {
+import './forms.css'
+
+export function Inputs({textarea=false, type, placeholder, id, label, value, onChange, mandatory, defaultValue}) {
     return (
 
         <div className="inputs">
@@ -10,14 +12,18 @@ export function Inputs({textarea=false, type, placeholder, id, label, value, onC
             <textarea 
             id={id}
             value={value}
-            placeholder={placeholder}/>
+            onChange={onChange}
+            placeholder={placeholder}
+            defaultValue={defaultValue}/>
+            
             :
             <input 
             type={type}
             id={id}
             value={value}
             onChange={onChange}
-            placeholder={placeholder}/>
+            placeholder={placeholder}
+            defaultValue={defaultValue}/>
         }
         </div>
     )
