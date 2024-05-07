@@ -1,9 +1,15 @@
 import './preview.css'
 import { IconLocation, IconMail, IconPhone } from '../../assets/icons'
 
-export function PresonalInfoPreview({personalInfo}) {
+export function PresonalInfoPreview({personalInfo, color}) {
+    let isBlack = (color==="rgb(0, 0, 0)" || color==="rgb(20, 7, 133)") ? true : false
+    let styles = {
+        backgroundColor: color,
+        color: isBlack ? "white" : "black"
+    }
     return (
-        <div className="personal-info-preview">
+        
+        <div className="personal-info-preview" style={styles} >
         <h1>{personalInfo.fullName}</h1>
         <div>
         <div>

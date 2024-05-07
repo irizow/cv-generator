@@ -3,7 +3,7 @@ import './preview.css'
 export function ExperiencePreview({expInfo}) {
     return (
         <div className="exp-info-preview">
-            <h1>Professional Experience</h1>
+            <h1>Experience</h1>
         {expInfo.map((exp, index) =>
         <div className="info-wrapper" key={index}>
         <div className="date-and-location">
