@@ -40,7 +40,7 @@ export function SkillsPreview({skillsInfo, color}) {
             <div key={index} className="skill-container">
             <p>{info.skill}</p>
             <img src={renderCondition(info)} style ={isBlack? {filter: invert} : null}></img>
-            {console.log("img src + render " + imgSrc + renderCondition)}
+            {console.log("img src + render " + renderCondition)}
             </div>)}
 
         </div>
