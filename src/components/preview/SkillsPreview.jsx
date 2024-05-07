@@ -2,7 +2,7 @@ import './preview.css'
 
 
 export function SkillsPreview({skillsInfo, color}) {
-    const imgSrc = "./src/assets/"
+    const imgSrc = "../../src/assets/"
     let isBlack = (color==="rgb(0, 0, 0)" || color==="rgb(20, 7, 133)") ? true : false
     let invert = "invert(100%)"
     let styles = {
