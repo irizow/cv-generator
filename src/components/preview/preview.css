@@ -127,3 +127,11 @@ align-self: center;
     text-align: left;
     padding-right: 1.5vw;
 }
+
+@media only screen and (max-width: 900px) {
+    .preview-page {
+     width: 80vw;
+     font-size: 0.8rem;
+    }
+
+  }
