@@ -1,6 +1,5 @@
-import html2canvas from "html2canvas";
+
 import jsPDF from "jspdf";
-import { domToPng } from "modern-screenshot";
 import DomToImage from "dom-to-image";
 
 
@@ -24,7 +23,7 @@ export default function genPDF() {
         img.src = dataUrl;
         var doc = new jsPDF();
         doc.addImage(img.src, 'PNG', 0, 0, 210, 297)
-        doc.save();
+        doc.save('myCV.pdf');
     })
     .catch(function (error) {
         console.error('oops, something went wrong!', error);
