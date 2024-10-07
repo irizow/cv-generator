@@ -50,3 +50,13 @@
     justify-self: flex-end;
     align-self: center;
 }
+
+@media only screen and (max-width: 900px) {
+    .button-show {
+     width: 70vw;
+    }
+
+    .prev-container {
+        width: 70vw;
+    }
+  }

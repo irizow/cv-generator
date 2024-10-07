@@ -70,3 +70,13 @@
 .inputs textarea {
     height: 20vh;
 }
+
+@media only screen and (max-width: 900px) {
+    .forms button {
+     width: 60vw;
+    }
+
+    .inputs input, .inputs textarea {
+        width: 50vw;
+    }
+  }

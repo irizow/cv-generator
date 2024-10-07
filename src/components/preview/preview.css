@@ -130,8 +130,9 @@ align-self: center;
 
 @media only screen and (max-width: 900px) {
     .preview-page {
-     width: 80vw;
-     font-size: 0.8rem;
+     width: 90vw;
+     font-size: 0.6rem;
+     margin: 1.5rem 0;
     }
 
   }
